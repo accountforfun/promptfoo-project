@@ -1,8 +1,9 @@
-# Esempio di promptfoo.yml
+# Definizione dei prompt
 prompts:
   - 'Convert this English to {{language}}: {{input}}'
   - 'Translate to {{language}}: {{input}}'
 
+# Definizione dei test
 tests:
   - prompt: 'Convert this English to {{language}}: {{input}}'
     vars:
