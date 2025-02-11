@@ -1,0 +1,5 @@
+# Esempio di promptfoo.yml
+tests:
+  - name: "Test della capitale della Francia"
+    prompt: "Qual è la capitale della Francia?"
+    expected_output: "Parigi"
