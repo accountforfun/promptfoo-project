@@ -1,0 +1,843 @@
+{
+  "evalId": "eval-lOe-2025-02-11T14:44:12",
+  "results": {
+    "version": 3,
+    "timestamp": "2025-02-11T14:44:12.919Z",
+    "prompts": [
+      {
+        "raw": "You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\"",
+        "label": "prompts.txt: You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\"",
+        "id": "66e7f8f19e93924fc43f014a6c11c37c963702d9e6d0742de95c7efaa05a5f16",
+        "provider": "openai:gpt-4o-mini",
+        "metrics": {
+          "score": 0,
+          "testPassCount": 0,
+          "testFailCount": 0,
+          "testErrorCount": 10,
+          "assertPassCount": 0,
+          "assertFailCount": 0,
+          "totalLatencyMs": 0,
+          "tokenUsage": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 10,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0
+        }
+      },
+      {
+        "raw": "You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\"",
+        "label": "prompts.txt: You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\"",
+        "id": "42576b83c995e213d4025c0f8e1458848f485fa8728649f1fbadcbf6108a42b1",
+        "provider": "openai:gpt-4o-mini",
+        "metrics": {
+          "score": 0,
+          "testPassCount": 0,
+          "testFailCount": 0,
+          "testErrorCount": 10,
+          "assertPassCount": 0,
+          "assertFailCount": 0,
+          "totalLatencyMs": 0,
+          "tokenUsage": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 10,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "cost": 0
+        }
+      }
+    ],
+    "results": [
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "d6381552-0e0e-4cd8-9e9d-f47d97a54849",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: Bob: \"Can you help me find a specific product on your website?\"",
+          "label": "prompts.txt: You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "66e7f8f19e93924fc43f014a6c11c37c963702d9e6d0742de95c7efaa05a5f16",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Bob",
+            "question": "Can you help me find a specific product on your website?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #1",
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {
+          "name": "Bob",
+          "question": "Can you help me find a specific product on your website?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "3e007c09-a0fc-4444-ae0f-5adf5fd6de8c",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: Bob: \"Can you help me find a specific product on your website?\"",
+          "label": "prompts.txt: You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "42576b83c995e213d4025c0f8e1458848f485fa8728649f1fbadcbf6108a42b1",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Bob",
+            "question": "Can you help me find a specific product on your website?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #1",
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "vars": {
+          "name": "Bob",
+          "question": "Can you help me find a specific product on your website?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "f25d97a2-cb49-48e4-bdf5-7e8c33cf155c",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: Jane: \"Do you have any promotions or discounts currently available?\"",
+          "label": "prompts.txt: You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "66e7f8f19e93924fc43f014a6c11c37c963702d9e6d0742de95c7efaa05a5f16",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Jane",
+            "question": "Do you have any promotions or discounts currently available?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #2",
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "vars": {
+          "name": "Jane",
+          "question": "Do you have any promotions or discounts currently available?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "67e86c24-7234-4d58-ac9b-e9e1b784d90b",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: Jane: \"Do you have any promotions or discounts currently available?\"",
+          "label": "prompts.txt: You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "42576b83c995e213d4025c0f8e1458848f485fa8728649f1fbadcbf6108a42b1",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Jane",
+            "question": "Do you have any promotions or discounts currently available?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #2",
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "vars": {
+          "name": "Jane",
+          "question": "Do you have any promotions or discounts currently available?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "06038621-f425-41db-aaa1-1a6afffe5711",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: Dave: \"What are your shipping and return policies?\"",
+          "label": "prompts.txt: You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "66e7f8f19e93924fc43f014a6c11c37c963702d9e6d0742de95c7efaa05a5f16",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Dave",
+            "question": "What are your shipping and return policies?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #3",
+          "metadata": {}
+        },
+        "testIdx": 2,
+        "vars": {
+          "name": "Dave",
+          "question": "What are your shipping and return policies?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "4e0fe36d-47a1-4aee-9614-831b1ac0a510",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: Dave: \"What are your shipping and return policies?\"",
+          "label": "prompts.txt: You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "42576b83c995e213d4025c0f8e1458848f485fa8728649f1fbadcbf6108a42b1",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Dave",
+            "question": "What are your shipping and return policies?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #3",
+          "metadata": {}
+        },
+        "testIdx": 2,
+        "vars": {
+          "name": "Dave",
+          "question": "What are your shipping and return policies?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "72bb4cc8-8802-4c5c-adf1-b098f6bc145a",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: Jim: \"Can you provide more information about the product specifications or features?\"",
+          "label": "prompts.txt: You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "66e7f8f19e93924fc43f014a6c11c37c963702d9e6d0742de95c7efaa05a5f16",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Jim",
+            "question": "Can you provide more information about the product specifications or features?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #4",
+          "metadata": {}
+        },
+        "testIdx": 3,
+        "vars": {
+          "name": "Jim",
+          "question": "Can you provide more information about the product specifications or features?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "052e9fec-0e7c-41c8-a69d-1c8572e7c2d5",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: Jim: \"Can you provide more information about the product specifications or features?\"",
+          "label": "prompts.txt: You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "42576b83c995e213d4025c0f8e1458848f485fa8728649f1fbadcbf6108a42b1",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Jim",
+            "question": "Can you provide more information about the product specifications or features?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #4",
+          "metadata": {}
+        },
+        "testIdx": 3,
+        "vars": {
+          "name": "Jim",
+          "question": "Can you provide more information about the product specifications or features?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "bb1bee48-c14f-4a42-9b76-196e3af58389",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: Alice: \"Can you recommend products that are similar to what I've been looking at?\"",
+          "label": "prompts.txt: You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "66e7f8f19e93924fc43f014a6c11c37c963702d9e6d0742de95c7efaa05a5f16",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Alice",
+            "question": "Can you recommend products that are similar to what I've been looking at?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #5",
+          "metadata": {}
+        },
+        "testIdx": 4,
+        "vars": {
+          "name": "Alice",
+          "question": "Can you recommend products that are similar to what I've been looking at?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "06b0cc71-93fc-4890-900e-dbd4228428d7",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: Alice: \"Can you recommend products that are similar to what I've been looking at?\"",
+          "label": "prompts.txt: You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "42576b83c995e213d4025c0f8e1458848f485fa8728649f1fbadcbf6108a42b1",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Alice",
+            "question": "Can you recommend products that are similar to what I've been looking at?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #5",
+          "metadata": {}
+        },
+        "testIdx": 4,
+        "vars": {
+          "name": "Alice",
+          "question": "Can you recommend products that are similar to what I've been looking at?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "d8606910-6092-42af-9dff-23b365aa5568",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: Sophie: \"Do you have any recommendations for products that are currently popular or trending?\"",
+          "label": "prompts.txt: You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "66e7f8f19e93924fc43f014a6c11c37c963702d9e6d0742de95c7efaa05a5f16",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Sophie",
+            "question": "Do you have any recommendations for products that are currently popular or trending?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #6",
+          "metadata": {}
+        },
+        "testIdx": 5,
+        "vars": {
+          "name": "Sophie",
+          "question": "Do you have any recommendations for products that are currently popular or trending?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "e8c71fc2-c8f7-426a-8a5e-958f50974742",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: Sophie: \"Do you have any recommendations for products that are currently popular or trending?\"",
+          "label": "prompts.txt: You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "42576b83c995e213d4025c0f8e1458848f485fa8728649f1fbadcbf6108a42b1",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Sophie",
+            "question": "Do you have any recommendations for products that are currently popular or trending?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #6",
+          "metadata": {}
+        },
+        "testIdx": 5,
+        "vars": {
+          "name": "Sophie",
+          "question": "Do you have any recommendations for products that are currently popular or trending?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "66f6d1f5-8210-4d99-8798-9404f00ea877",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: Ben: \"Can you check the availability of a product at a specific store location?\"",
+          "label": "prompts.txt: You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "66e7f8f19e93924fc43f014a6c11c37c963702d9e6d0742de95c7efaa05a5f16",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Ben",
+            "question": "Can you check the availability of a product at a specific store location?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #7",
+          "metadata": {}
+        },
+        "testIdx": 6,
+        "vars": {
+          "name": "Ben",
+          "question": "Can you check the availability of a product at a specific store location?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "d6cf524c-2a9b-4254-9b6c-d4a7f004e4be",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: Ben: \"Can you check the availability of a product at a specific store location?\"",
+          "label": "prompts.txt: You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "42576b83c995e213d4025c0f8e1458848f485fa8728649f1fbadcbf6108a42b1",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Ben",
+            "question": "Can you check the availability of a product at a specific store location?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #7",
+          "metadata": {}
+        },
+        "testIdx": 6,
+        "vars": {
+          "name": "Ben",
+          "question": "Can you check the availability of a product at a specific store location?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "11d4bdf4-ffeb-4066-a230-4c77888f0733",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: Jessie: \"How can I track my order after it has been shipped?\"",
+          "label": "prompts.txt: You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "66e7f8f19e93924fc43f014a6c11c37c963702d9e6d0742de95c7efaa05a5f16",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Jessie",
+            "question": "How can I track my order after it has been shipped?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #8",
+          "metadata": {}
+        },
+        "testIdx": 7,
+        "vars": {
+          "name": "Jessie",
+          "question": "How can I track my order after it has been shipped?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "1b66d55a-5519-4e9f-8bd0-0a7d9d2879a5",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: Jessie: \"How can I track my order after it has been shipped?\"",
+          "label": "prompts.txt: You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "42576b83c995e213d4025c0f8e1458848f485fa8728649f1fbadcbf6108a42b1",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Jessie",
+            "question": "How can I track my order after it has been shipped?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #8",
+          "metadata": {}
+        },
+        "testIdx": 7,
+        "vars": {
+          "name": "Jessie",
+          "question": "How can I track my order after it has been shipped?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "cafd4ff5-d2f8-442c-b5c0-52decdf96954",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: Kim: \"What payment methods do you accept?\"",
+          "label": "prompts.txt: You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "66e7f8f19e93924fc43f014a6c11c37c963702d9e6d0742de95c7efaa05a5f16",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Kim",
+            "question": "What payment methods do you accept?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #9",
+          "metadata": {}
+        },
+        "testIdx": 8,
+        "vars": {
+          "name": "Kim",
+          "question": "What payment methods do you accept?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "d8393095-7708-454f-8818-c010ba42c959",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: Kim: \"What payment methods do you accept?\"",
+          "label": "prompts.txt: You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "42576b83c995e213d4025c0f8e1458848f485fa8728649f1fbadcbf6108a42b1",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Kim",
+            "question": "What payment methods do you accept?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #9",
+          "metadata": {}
+        },
+        "testIdx": 8,
+        "vars": {
+          "name": "Kim",
+          "question": "What payment methods do you accept?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "0aab5958-3d31-404c-b42d-d3a9cfc2388c",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: Emily: \"Can you help me with a problem I'm having with my account or order?\"",
+          "label": "prompts.txt: You're an ecommerce chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "66e7f8f19e93924fc43f014a6c11c37c963702d9e6d0742de95c7efaa05a5f16",
+        "promptIdx": 0,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Emily",
+            "question": "Can you help me with a problem I'm having with my account or order?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #10",
+          "metadata": {}
+        },
+        "testIdx": 9,
+        "vars": {
+          "name": "Emily",
+          "question": "Can you help me with a problem I'm having with my account or order?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      },
+      {
+        "cost": 0,
+        "error": "Error: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n\nError: OpenAI API key is not set. Set the OPENAI_API_KEY environment variable or add `apiKey` to the provider config.\n    at OpenAiChatCompletionProvider.callApi (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/providers/openai/chat.js:99:19)\n    at runEval (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:180:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async processEvalStep (/usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:635:26)\n    at async /usr/local/share/nvm/versions/node/v20.18.1/lib/node_modules/promptfoo/dist/src/evaluator.js:845:13",
+        "gradingResult": null,
+        "id": "d23cbf26-8a43-41a7-9240-c0c33a8905c9",
+        "latencyMs": 0,
+        "namedScores": {},
+        "prompt": {
+          "raw": "You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: Emily: \"Can you help me with a problem I'm having with my account or order?\"",
+          "label": "prompts.txt: You're a smart, bubbly chat assistant for a shoe company.\nAnswer this user's question: {{name}}: \"{{question}}\""
+        },
+        "promptId": "42576b83c995e213d4025c0f8e1458848f485fa8728649f1fbadcbf6108a42b1",
+        "promptIdx": 1,
+        "provider": {
+          "id": "openai:gpt-4o-mini",
+          "label": ""
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "vars": {
+            "name": "Emily",
+            "question": "Can you help me with a problem I'm having with my account or order?"
+          },
+          "assert": [],
+          "options": {},
+          "description": "Row #10",
+          "metadata": {}
+        },
+        "testIdx": 9,
+        "vars": {
+          "name": "Emily",
+          "question": "Can you help me with a problem I'm having with my account or order?"
+        },
+        "metadata": {},
+        "failureReason": 2
+      }
+    ],
+    "stats": {
+      "successes": 0,
+      "failures": 0,
+      "errors": 20,
+      "tokenUsage": {
+        "cached": 0,
+        "completion": 0,
+        "prompt": 0,
+        "total": 0,
+        "numRequests": 20,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0
+        }
+      }
+    }
+  },
+  "config": {
+    "prompts": [
+      "prompts.txt"
+    ],
+    "providers": [
+      "openai:gpt-4o-mini"
+    ],
+    "tests": "tests.csv",
+    "sharing": true,
+    "outputPath": [
+      "output.json"
+    ],
+    "extensions": []
+  },
+  "shareableUrl": null
+}
