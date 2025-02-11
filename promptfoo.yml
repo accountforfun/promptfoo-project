@@ -1,5 +1,12 @@
 # Esempio di promptfoo.yml
+prompts:
+  - 'Convert this English to {{language}}: {{input}}'
+  - 'Translate to {{language}}: {{input}}'
 tests:
-  - name: "Test della capitale della Francia"
-    prompt: "Qual è la capitale della Francia?"
-    expected_output: "Parigi"
+  tests:
+  - vars:
+      language: French
+      input: Hello world
+  - vars:
+      language: Spanish
+      input: Where is the library?
